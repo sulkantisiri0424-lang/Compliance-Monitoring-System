@@ -2,8 +2,3 @@ fastapi
 uvicorn
 sqlalchemy
 pydantic
-pandas
-reportlab
-nltk
-spacy
-python-multipart

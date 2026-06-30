@@ -1,9 +1,27 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compliance Monitoring System</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<div class="container">
     <h1>Compliance Monitoring System</h1>
+
+    <form id="scanForm">
+        <label>Transaction Description</label>
+        <textarea id="text" placeholder="Enter transaction or communication..."></textarea>
+
+        <button type="submit">Analyze</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

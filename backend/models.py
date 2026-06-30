@@ -1,11 +1,6 @@
-from sqlalchemy import Column, Integer, String, Float
-from database import Base
 
-class Transaction(Base):
-    __tablename__ = "transactions"
-
-    id = Column(Integer, primary_key=True, index=True)
-    sender = Column(String)
-    receiver = Column(String)
-    amount = Column(Float)
-    status = Column(String)
+class Transaction:
+    def __init__(self, sender, receiver, amount):
+        self.sender = sender
+        self.receiver = receiver
+        self.amount = amount
